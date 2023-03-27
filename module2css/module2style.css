@@ -1,0 +1,79 @@
+/******************* Base styles *******************/
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    background-color: bisque;
+}
+
+h1 {
+    
+    color: blue;
+    font-size: 175%;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+section {
+
+    font-size: 125%;
+    text-align: right ;
+    float: right;
+    border: 1px solid blueviolet;
+    width: fit-content;
+    height: fit-content;
+}
+
+#section1 {
+
+    background-color: rgb(198, 125, 116);
+}
+
+#section2 {
+    background-color: rgb(124, 230, 124);
+}
+
+#section3 {
+    background-color: rgb(124, 218, 187);
+}
+
+
+
+
+/******************* Responsive framework *******************/
+
+div {
+
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(193, 211, 167);
+    height: fit-content;
+    padding: 10px;
+    margin-bottom: auto;
+    margin-right: auto;
+
+}
+
+@media (min-width: 992px) { .col-lg-3 {
+    float: left;
+    border: 1px solid black;
+    width: 33.33%;
+}
+}
+
+@media (min-width: 768px) and (max-width:991px) { .col-md-2 {
+    float: left;
+    border: 1px solid black;
+    width: 50%;
+
+}
+}
+
+@media (max-width: 767px) { .col-xs-1 {
+    float: left;
+    border: 1px solid black;
+    width: 100%;
+}
+}
